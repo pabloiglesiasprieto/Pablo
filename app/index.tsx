@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -9,7 +9,14 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Julian pelele.</Text>
+      <Text>Hola mundo!</Text>
+      <Text>Prueba</Text>
+      <Button title="Prueba" onPress={alerta}/>
     </View>
   );
+}
+function alerta (){
+
+  alert("Pulsaste el botón.");
+
 }
